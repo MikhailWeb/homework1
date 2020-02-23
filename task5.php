@@ -8,9 +8,7 @@ $auto['Toyota'] = $toyota;
 $auto['Opel'] = $opel;
 
 foreach($auto as $name => $arr) {
-    echo "CAR ".$name."\n";
-    foreach($arr as $key => $value) {
-        echo $value."   ";
-    }
-    echo "\n";
+    echo "CAR ".$name."<br>";
+    echo $arr['model'].'   '.$arr['speed'].'   '.$arr['doors'].'   '.$arr['year'];
+    echo "<br><br>";
 }

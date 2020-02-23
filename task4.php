@@ -1,18 +1,18 @@
 <?php
-$day = 3;
+$day = rand(0, 10);
+echo 'День '.$day.'-й - ';
 switch ($day) {
     case 1:
     case 2:
     case 3:
     case 4:
     case 5:
-        echo 'Это рабочиий день';
+        echo 'это рабочий день';
         break;
     case 6:
     case 7:
-        echo 'Это выходной день';
+        echo 'это выходной день';
         break;
     default:
-        echo 'Неизвестный день';
-        break;
+        echo 'неизвестный день';
 }
